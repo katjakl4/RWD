@@ -1,0 +1,91 @@
+/* Yleiset tyylit */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #735702; /* Tummanruskea */
+    background-color: #F2E416; /* Kirkas keltainen */
+}
+
+header {
+    background-color: #D9910D; /* Oranssi */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    color: #F2E416; /* Keltainen korostus */
+}
+
+.container {
+    padding: 1rem;
+}
+
+section {
+    margin: 20px 0;
+    padding: 1rem;
+    background-color: #F2B90F; /* Kullanvärinen */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #BF5C06; /* Syvä oranssi reunus */
+}
+
+.video iframe {
+    width: 100%;
+    height: 300px;
+    border: 3px solid #735702; /* Tummanruskea reunus */
+}
+
+footer {
+    text-align: center;
+    background-color: #BF5C06; /* Syvä oranssi */
+    color: white;
+    padding: 1rem;
+}
+
+/* Responsiivisuus */
+@media (max-width: 480px) {
+    .container {
+        display: block;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 801px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+}
